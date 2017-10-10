@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+
+@import 'thirdparty/normalize';
+
+@import 'settings/variables';
+@import 'settings/mixins';
+@import 'settings/typography';
+@import 'settings/helpers';
+
+@import 'components/form';
+@import 'components/scoreboard';
+@import 'components/guess-list';
+
+html {
+	height: 100%;
+	color: white;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+body {
+	background: linear-gradient(to bottom, #151b4d, #151b4d 85%, #2b3570 85%, #2b3570);
+	background-size: 100% 20px;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.container {
+	padding: 5% 15%;
+	box-sizing: border-box;
+	position: relative;
+	min-height: 100%;
+}
+
+.logo-container {
+	text-align: center;
+}
+
+#clear {
+	color: rgba(white, .5);
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background: transparent;
+	border: none;
+}

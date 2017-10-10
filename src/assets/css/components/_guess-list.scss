@@ -1,0 +1,37 @@
+.guess-list {
+	margin: 20px 0 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		position: relative;
+		display: inline-block;
+		border-radius: 50px;
+		height: 50px;
+		line-height: 44px;
+		padding: 0 30px;
+		background: #feae0d;
+		background: linear-gradient(to bottom, #333 0%, #555 49%,#444 50%,#222 100%);
+		box-sizing: border-box;
+		font-size: 28px;
+		border: 2px solid white;
+		text-transform: uppercase;
+		text-shadow: 3px 3px 5px black;
+		box-shadow: inset 0px 0px 20px rgba(black, .25), 0 0 0 2px #759bc8;
+	    outline: none;
+	    margin-right: 10px;
+	    padding-left: 60px;
+
+	    &:after {
+			content: "";
+			background-image: url('../img/cross.png');
+			background-size: contain;
+			background-repeat: none;
+			height: 54px;
+			width: 54px;
+			position: absolute;
+			left: -4px;
+			top: -4px;
+	    }
+	}
+}

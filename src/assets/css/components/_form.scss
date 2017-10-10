@@ -1,0 +1,60 @@
+.guess-form {
+	border: 2px solid #759bc8;
+	@extend .clearfix;
+	display: inline-block;
+	border-radius: 50px;
+
+	.textfield {
+		display: block;
+		border-radius: 50px 0 0 50px;
+		height: 50px;
+		line-height: 44px;
+		padding: 0 30px;
+		background: #554fd3;
+		background: linear-gradient(to bottom, #606060 0%,#a0a0a0 100%);
+		float: left;
+		box-sizing: border-box;
+		font-size: 28px;
+		border: 2px solid white;
+		text-transform: uppercase;
+		color: white;
+		font-family: 'Lato', Arial, sans-serif;
+		text-shadow: 3px 3px 5px black;
+		box-shadow: inset 0px 0px 20px rgba(black, .25);
+    	outline: none;
+	}
+
+	.button {
+		border-radius: 0 50px 50px 0;
+		box-shadow: none;
+	}
+}
+
+.button {
+	display: block;
+	border-radius: 50px;
+	height: 50px;
+	line-height: 44px;
+	padding: 0 30px;
+	background: #feae0d;
+	background: linear-gradient(to bottom, #f8a815 0%,#feae0d 49%,#da8206 50%,#da8206 100%);
+	box-sizing: border-box;
+	font-size: 28px;
+	border: 2px solid white;
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Lato', Arial, sans-serif;
+	text-shadow: 3px 3px 5px black;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 20px rgba(black, .25), 0 0 0 2px #759bc8;
+    outline: none;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: auto;
+	}
+}
