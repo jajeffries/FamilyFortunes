@@ -20,7 +20,7 @@ var config = {
 	audio: 'src/assets/audio/**/*',
 	images: 'src/assets/img/**/*',
 	tmp: 'tmp/',
-	dist: 'dist/',
+	dist: 'public/',
 	production: !!util.env.production
 };
 

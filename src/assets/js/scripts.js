@@ -1,12 +1,12 @@
-var answers = [
-	{value: 'red', stat: 367},
-	{value: 'green', stat: 298},
-	{value: 'yellow', stat: 256},
-	{value: 'blue', stat: 178},
-	{value: 'purple', stat: 103},
-	{value: 'violet', stat: 65},
-	{value: 'pink', stat: 43}
-];
+function getQueryStringParameter(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
 //loop through all the answers and place them hidden into the dom
 for(var i = 0; i<answers.length; i++){
@@ -19,12 +19,15 @@ for(var i = 0; i<answers.length; i++){
 	$('#answerTable').append(answerRow);
 }
 
+var questionNumber = getQueryStringParameter("index");
 //create arrays for incorrect and correct guesses that are either blank or collected from local storage
-var incorrectGuesses = JSON.parse(localStorage.getItem('incorrectGuesses') || "[]");
-var correctGuesses = JSON.parse(localStorage.getItem('correctGuesses') || "[]");
+var incorrectGuesses = JSON.parse(localStorage.getItem('incorrectGuesses') || '{}');
+var correctGuesses = JSON.parse(localStorage.getItem('correctGuesses') || '{}');
+correctGuesses[questionNumber] = [];
+incorrectGuesses[questionNumber] = [];
 
 //if there are localstorage values, display the already guessed answers on the scoreboard
-if((incorrectGuesses.length > 0) || (correctGuesses.length > 0)) {
+if((incorrectGuesses[questionNumber].length > 0) || (correctGuesses[questionNumber].length > 0)) {
 	revealGuesses();
 }
 
@@ -38,7 +41,7 @@ $('form').submit(function(e){
 	if(guess != ''){
 		if(correct){
 			correctAudio.play();
-			correctGuesses.push(guess);
+			correctGuesses[questionNumber].push(guess);
 			localStorage.setItem('correctGuesses', JSON.stringify(correctGuesses));
 
 			$('#' + guess + ' span').show(); //show guess on the scoreboard
@@ -50,7 +53,7 @@ $('form').submit(function(e){
 
 		} else {
 			wrongAudio.play();
-			incorrectGuesses.push(guess);
+			incorrectGuesses[questionNumber].push(guess);
 			localStorage.setItem('incorrectGuesses', JSON.stringify(incorrectGuesses));
 
 			showCross();
@@ -58,9 +61,9 @@ $('form').submit(function(e){
 			$('ul#guessList').append('<li>' + guess + '</li>'); //add the guess to the incorrect guess list
 
 			//if theres more than 3 guesses, disable the form and show the 'show answers' button
-			if(incorrectGuesses.length >= 3){
+			if(incorrectGuesses[questionNumber].length >= 3){
 				$('form input#submit').prop("disabled", true);
-				$('#showAnswers').show();
+				$('#showAnswers').css('display', 'block');
 			}
 		}
 	}
