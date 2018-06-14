@@ -1,0 +1,220 @@
+[
+  {
+    "question": "Reasons your ticket is blocked",
+    "answers": [
+      {"answer": "Waiting for client response", "number": 37},
+      {"answer": "Busy with a live issue", "number": 32},
+      {"answer": "Unclear requirements", "number": 25},
+      {"answer": "Waiting for another team", "number": 5},
+      {"answer": "On holiday", "number": 1}
+    ]
+  },
+  {
+    "question": "Excuses for breaking your WIP limit",
+    "answers": [
+      {"answer": "Client changed priorities", "number": 49},
+      {"answer": "Queue upstream", "number": 25},
+      {"answer": "The other ticket was nearly done", "number": 24},
+      {"answer": "It was too low anyway", "number": 2}
+    ]
+  },
+  {
+    "question": "Things you might find in SCRUM",
+    "answers": [
+      {"answer": "Sprints", "number": 62},
+      {"answer": "Retrospectives", "number": 14},
+      {"answer": "Estimates", "number": 10},
+      {"answer": "Planning Poker", "number": 7},
+      {"answer": "SCRUM master", "number": 6},
+      {"answer": "Developer", "number": 1}
+    ]
+  },
+  {
+    "question": "Things you might say when pairing",
+    "answers": [
+      {"answer": "You have different keyboard shortcuts", "number": 32},
+      {"answer": "Can I have the keyboard now?", "number": 27},
+      {"answer": "How does that work?", "number": 25},
+      {"answer": "Is it the end of the pomodoro yet?", "number": 21}
+    ]
+  },
+  {
+    "question": "Things you might find in a GDPR email",
+    "answers": [
+      {"answer": "Privacy policy", "number": 60},
+      {"answer": "We care about your privacy", "number": 20},
+      {"answer": "We'd hate to see you go", "number": 8},
+      {"answer": "Consent", "number": 2}
+    ]
+  },
+  {
+    "question": "Things you might find on a kanban board",
+    "answers": [
+      {"answer": "Tickets", "number": 45},
+      {"answer": "WIP limit", "number": 29},
+      {"answer": "Swimlanes", "number": 11},
+      {"answer": "Columns", "number": 13},
+      {"answer": "Retro actions", "number": 12}
+    ]
+  },
+  {
+    "question": "Things you might hear a project manager say",
+    "answers": [
+      {"answer": "How long?!", "number": 7},
+      {"answer": "Why's it a 5?", "number": 7},
+      {"answer": "JFDI", "number": 7},
+      {"answer": "How are you getting on with x?", "number": 7}
+    ]
+  },
+  {
+    "question": "What might you do while refactoring",
+    "answers": [
+      {"answer": "Cry", "number": 7},
+      {"answer": "Run tests", "number": 7},
+      {"answer": "Extract method", "number": 7},
+      {"answer": "Commit", "number": 7}
+    ]
+  },
+  {
+    "question": "Things a developer might say",
+    "answers": [
+      {"answer": "Why isn't this working?", "number": 7},
+      {"answer": "I was missing a semi-colon", "number": 7},
+      {"answer": "But it's what stackoverflow recommended", "number": 7},
+      {"answer": "Maybe we could use docker for this...", "number": 7}
+    ]
+  },
+  {
+    "question": "Things you love about JIRA",
+    "answers": [
+      {"answer": "Reports", "number": 7},
+      {"answer": "Different ways of doing everything", "number": 7},
+      {"answer": "Permissions", "number": 7},
+      {"answer": "Add ons", "number": 7}
+    ]
+  },
+  {
+    "question": "Things you might focus on when doing TDD",
+    "answers": [
+      {"answer": "Code Coverage", "number": 7},
+      {"answer": "Refactoring", "number": 7},
+      {"answer": "Not writing untested code", "number": 7},
+      {"answer": "Evolutionary design", "number": 7}
+    ]
+  },
+  {
+    "question": "Things you might mention when setting up Continuous Integration",
+    "answers": [
+      {"answer": "Jenkins", "number": 7},
+      {"answer": "Automation", "number": 7},
+      {"answer": "Fast builds", "number": 7},
+      {"answer": "Who's the DevOps person?", "number": 7}
+    ]
+  },
+  {
+    "question": "Things a SCRUM master might say",
+    "answers": [
+      {"answer": "What would you do differently?", "number": 7},
+      {"answer": "Could we do this in a simpler way", "number": 7},
+      {"answer": "Have you read the GOOS book?", "number": 7},
+      {"answer": "What would Jeff Sutherland do?", "number": 7}
+    ]
+  },
+  {
+    "question": "Things developers argue about",
+    "answers": [
+      {"answer": "Software Design", "number": 7},
+      {"answer": "Technology to use", "number": 7},
+      {"answer": "Estimates", "number": 7},
+      {"answer": "#NoEstimates", "number": 7}
+    ]
+  },
+  {
+    "question": "Retro actions that get ignored",
+    "answers": [
+      {"answer": "Changing WIP limits", "number": 41},
+      {"answer": "Fixing tech debt", "number": 23},
+      {"answer": "#NoEstimates", "number": 22},
+      {"answer": "What would Jeff Sutherland do?", "number": 14}
+    ]
+  },
+  {
+    "question": "Things you should do during mobbing",
+    "answers":[
+      {
+        "answer":"check twitter",
+        "number": 41
+      },
+      {
+        "answer":"go for a long poo",
+        "number": 23
+      },
+      {
+        "answer":"point out typos",
+        "number": 14
+      },
+      {
+        "answer":"argue about pommodoro length",
+        "number": 11
+      },
+      {
+        "answer":"bikeshed",
+        "number": 9
+      }
+    ]
+  },
+  {
+    "question": "Advantages of using Waterfall",
+    "answers":[
+      {
+        "answer":"no rework required",
+        "number": 33
+      },
+      {
+        "answer":"documentation",
+        "number": 27
+      },
+      {
+        "answer":"you only need to test at the end",
+        "number": 17
+      },
+      {
+        "answer":"lucrative government contracts",
+        "number": 15
+      },
+      {
+        "answer":"job security",
+        "number": 11
+      }
+    ]
+  },
+    {
+    "question": "Things you associate with Devops",
+    "answers":[
+      {
+        "answer":"devops department",
+        "number": 25
+      },
+      {
+        "answer":"release manager",
+        "number": 20
+      },
+      {
+        "answer":"private cloud",
+        "number": 18
+      },
+      {
+        "answer":"containers",
+        "number": 12
+      },
+      {
+        "answer":"kubernetes",
+        "number": 11
+      },
+      {
+        "answer":"infrastructure as code",
+        "number": 8
+      }
+    ]
+  }
+]
