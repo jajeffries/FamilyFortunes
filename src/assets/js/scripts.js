@@ -10,7 +10,7 @@ function getQueryStringParameter(name) {
 
 //loop through all the answers and place them hidden into the dom
 for(var i = 0; i<answers.length; i++){
-	var answerRow = '<div class="answer" id="' + answers[i].value + '">' +
+	var answerRow = '<div class="answer" id="' + answers[i].value.replace(' ', '').toLowerCase() + '">' +
 	                '    <div class="answer__number">' + parseInt(i + 1) + '</div>' +
 	                '    <div class="answer__value"><span style="display: none;">' + answers[i].value + '</span></div>' +
 	                '    <div class="answer__stat"><span style="display: none;">' + answers[i].stat + '</span></div>' +
@@ -50,7 +50,7 @@ $('form').submit(function(e){
 			// if(answers[0].value == guess){
 			// 	console.log('top answer');
 			// }
-
+			revealGuesses();
 		} else {
 			wrongAudio.play();
 			incorrectGuesses[questionNumber].push(guess);
@@ -97,20 +97,20 @@ function showCross(number){
 
 function revealGuesses(){
 	//loop through incorrect guesses and add it to the guess list
-	for(var i = 0; i<incorrectGuesses.length; i++){
-		$('ul#guessList').append('<li>' + incorrectGuesses[i] + '</li>');
+	for(var i = 0; i<incorrectGuesses[questionNumber].length; i++){
+		$('ul#guessList').append('<li>' + incorrectGuesses[questionNumber][i] + '</li>');
 	}
 
 	//loop through correct guesses and show them in the scoreboard
-	for(var c = 0; c<correctGuesses.length; c++){
-		$('#' + correctGuesses[c] + ' span').show();
+	for(var c = 0; c<correctGuesses[questionNumber].length; c++){
+		$('#' + correctGuesses[questionNumber][c].replace(' ', '').toLowerCase() + ' span').show();
 	}
 
 	//show the correct number of crosses
-	showCross(incorrectGuesses.length);
+	showCross(incorrectGuesses[questionNumber].length);
 
 	//disable the input and show the 'show answers' button if 3 incorrect guesses
-	if(incorrectGuesses.length >= 3){
+	if(incorrectGuesses[questionNumber].length >= 3){
 		$('#showAnswers').show();
 		$('form input#submit').prop("disabled", true);
 	}

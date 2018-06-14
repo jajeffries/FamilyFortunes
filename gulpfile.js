@@ -40,7 +40,7 @@ gulp.task("sass", function () {
 			cascade: false
 		}))
 		.pipe(config.production ? util.noop() : sourcemaps.write())
-		.pipe(gulp.dest((config.production ? config.dist : config.tmp) + 'assets/css'))
+		.pipe(gulp.dest((config.production ? config.dist : config.dist) + 'assets/css'))
 		.pipe(reload())
 });
 
@@ -55,7 +55,7 @@ gulp.task('js', function () {
 		.pipe(concat('scripts.js'))
 		.pipe(config.production ? uglify() : util.noop())
 		.pipe(config.production ? util.noop() : sourcemaps.write())
-		.pipe(gulp.dest((config.production ? config.dist : config.tmp) + 'assets/js'))
+		.pipe(gulp.dest((config.production ? config.dist : config.dist) + 'assets/js'))
 		.pipe(reload());
 });
 
@@ -63,12 +63,12 @@ gulp.task('js', function () {
 // HTML
 gulp.task('html', function () {
 	gulp.src(config.html)
-		.pipe(changed(config.production ? config.dist : config.tmp))
+		.pipe(changed(config.production ? config.dist : config.dist))
 		.pipe(plumber())
 		.pipe(config.production ? htmlmin({
 			collapseWhitespace: true
 		}) : util.noop())
-		.pipe(gulp.dest(config.production ? config.dist : config.tmp))
+		.pipe(gulp.dest(config.production ? config.dist : config.dist))
 		.pipe(reload());
 });
 
@@ -76,14 +76,14 @@ gulp.task('html', function () {
 // IMAGES
 gulp.task('images', function () {
 	gulp.src(config.images)
-		.pipe(gulp.dest((config.production ? config.dist : config.tmp) + 'assets/img'))
+		.pipe(gulp.dest((config.production ? config.dist : config.dist) + 'assets/img'))
 });
 
 
 // AUDIO
 gulp.task('audio', function () {
 	gulp.src(config.audio)
-		.pipe(gulp.dest((config.production ? config.dist : config.tmp) + 'assets/audio'))
+		.pipe(gulp.dest((config.production ? config.dist : config.dist) + 'assets/audio'))
 });
 
 
@@ -100,7 +100,7 @@ gulp.task('clean', function () {
 gulp.task('browser-sync', function () {
 	browserSync.init({
 		server: {
-			baseDir: config.production ? config.dist : config.tmp
+			baseDir: config.production ? config.dist : config.dist
 		}
 	});
 });

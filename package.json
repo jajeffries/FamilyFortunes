@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node ./bin/www",
-    "build": "gulp build --production"
+    "build": "gulp build"
   },
   "dependencies": {
     "ejs": "^2.6.1",
