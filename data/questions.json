@@ -12,10 +12,11 @@
   {
     "question": "Excuses for breaking your WIP limit",
     "answers": [
-      {"answer": "Client changed priorities", "number": 49},
-      {"answer": "Queue upstream", "number": 25},
-      {"answer": "The other ticket was nearly done", "number": 24},
-      {"answer": "It was too low anyway", "number": 2}
+      {"answer": "It was too low anyway", "number": 49},
+      {"answer": "Client changed priorities", "number": 26},
+      {"answer": "Queue upstream", "number": 17},
+      {"answer": "The other ticket was nearly done", "number": 16},
+      {"answer": "Fuck WIP limits", "number": 3}
     ]
   },
   {
@@ -60,28 +61,50 @@
   {
     "question": "Things you might hear a project manager say",
     "answers": [
-      {"answer": "How long?!", "number": 7},
-      {"answer": "Why's it a 5?", "number": 7},
-      {"answer": "JFDI", "number": 7},
-      {"answer": "How are you getting on with x?", "number": 7}
+      {"answer": "How long?!", "number": 48},
+      {"answer": "Why's it a 5?", "number": 26},
+      {"answer": "JFDI", "number": 18},
+      {"answer": "How are you getting on with x?", "number": 12}
     ]
   },
   {
     "question": "What might you do while refactoring",
     "answers": [
-      {"answer": "Cry", "number": 7},
-      {"answer": "Run tests", "number": 7},
-      {"answer": "Extract method", "number": 7},
-      {"answer": "Commit", "number": 7}
+      {"answer": "Cry", "number": 44},
+      {"answer": "re-write the entire thing", "number": 23},
+      {"answer": "Revert", "number": 18},
+      {"answer": "Rename", "number": 4},
+      {"answer": "Run tests", "number": 2},
+      {"answer": "Commit", "number": 1}
     ]
   },
   {
-    "question": "Things a developer might say",
-    "answers": [
-      {"answer": "Why isn't this working?", "number": 7},
-      {"answer": "I was missing a semi-colon", "number": 7},
-      {"answer": "But it's what stackoverflow recommended", "number": 7},
-      {"answer": "Maybe we could use docker for this...", "number": 7}
+    "question": "Things a dev might say about their ticket in a stand up",
+    "answers":[
+      {
+        "answer":"works on my machine",
+        "number": 29
+      },
+      {
+        "answer":"dev done need to write tests",
+        "number": 23
+      },
+      {
+        "answer":"only a one line change",
+        "number": 17 
+      },
+      {
+        "answer":"you dont need to test that",
+        "number": 15
+      },
+      {
+        "answer":"NoEstimates",
+        "number": 12
+      },
+      {
+        "answer":"almost done",
+        "number": 5
+      }
     ]
   },
   {
@@ -108,34 +131,94 @@
       {"answer": "Jenkins", "number": 7},
       {"answer": "Automation", "number": 7},
       {"answer": "Fast builds", "number": 7},
-      {"answer": "Who's the DevOps person?", "number": 7}
+      {"answer": "Whos the DevOps person", "number": 7}
     ]
   },
-  {
-    "question": "Things a SCRUM master might say",
-    "answers": [
-      {"answer": "What would you do differently?", "number": 7},
-      {"answer": "Could we do this in a simpler way", "number": 7},
-      {"answer": "Have you read the GOOS book?", "number": 7},
-      {"answer": "What would Jeff Sutherland do?", "number": 7}
+    {
+    "question": "Things a scrum master might say",
+    "answers":[
+      {
+        "answer":"is it done yet",
+        "number": 36
+      },
+      {
+        "answer":"increase velocity",
+        "number": 21
+      },
+      {
+        "answer":"can we claim half the points",
+        "number": 15
+      },
+      {
+        "answer":"can we size that bug",
+        "number": 13
+      },
+      {
+        "answer":"thats not agile",
+        "number": 11
+      },
+      {
+        "answer":"pre pre planning",
+        "number": 6
+      }
     ]
   },
-  {
+{
     "question": "Things developers argue about",
-    "answers": [
-      {"answer": "Software Design", "number": 7},
-      {"answer": "Technology to use", "number": 7},
-      {"answer": "Estimates", "number": 7},
-      {"answer": "#NoEstimates", "number": 7}
+    "answers":[
+      {
+        "answer":"tabs vs spaces",
+        "number": 31
+      },
+      {
+        "answer":"naming conventions",
+        "number": 21
+      },
+      {
+        "answer":"unit test names",
+        "number": 20
+      },
+      {
+        "answer":"operating systems",
+        "number": 17
+      },
+      {
+        "answer":"vim",
+        "number": 14
+      },
+      {
+        "answer":"lint rules",
+        "number": 8
+      },
+      {
+        "answer":"things that developers argue about",
+        "number": 2
+      }
     ]
   },
   {
-    "question": "Retro actions that get ignored",
-    "answers": [
-      {"answer": "Changing WIP limits", "number": 41},
-      {"answer": "Fixing tech debt", "number": 23},
-      {"answer": "#NoEstimates", "number": 22},
-      {"answer": "What would Jeff Sutherland do?", "number": 14}
+    "question": "Retrospective actions that never get done",
+    "answers":[
+      {
+        "answer":"fix e2e tests",
+        "number": 35
+      },
+      {
+        "answer":"obey the wip limit",
+        "number": 21
+      },
+      {
+        "answer":"3 amigos",
+        "number": 15
+      },
+      {
+        "answer":"write documentation",
+        "number": 14
+      },
+      {
+        "answer":"arrange a meeting",
+        "number": 12
+      }
     ]
   },
   {
